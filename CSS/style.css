@@ -217,24 +217,10 @@ body {
 
 
     .containerHistorico {
-        position: absolute;
-        bottom: 0;
-        height: 30vh; 
-        width: 100%;
+        display: none;
     }
 
-#respostaHistorico {
-    margin-top: 10px;
-}
 
-    #respostaConversao {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-        font-size: 22px;
-    }
 
     .select, #baseNumeroConvertido {
         width: 100%;

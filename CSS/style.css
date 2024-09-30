@@ -179,7 +179,7 @@ body {
 
 #respostaConversao {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     font-weight: bold;
     font-size: 26px;
@@ -216,8 +216,8 @@ body {
     }
 
 
-    .listaHistorico {
-        display: none;
+    .containerHistorico {
+       display: none;
     }
 
 

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor e Calculadora de Bases</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">NumericMachine</h1>
+            <ul class="navbar">
+                <li class="agora">
+                    <a onclick="mostrarConversor()">Conversor</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a onclick="mostrarCalculadora()">Calculadora</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sessaoContainer">
+
+        <div id="containerBody">
+            <h2>Convertor Numérico</h2>
+            <div class="formularioConversao">
+                <div class="boxForm">
+                    <div>
+                        <label for="">Digite o número a converter</label>
+                        <div class="containerConversao">
+                            <input class="input"  type="text" id="numero">
+                            <select class="inputBase" id="base_numero">
+                                <option value="2">2</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                                <option value="16">16</option>
+                            </select>
+                        </div>
+                    </div>
+                    <img src="./img/Arrow 2.png" alt="" class="icon">
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <label for="">Para a base:</label>
+                        <select id="baseNumeroConvertido">
+                            <option value="2">2</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    
+                    <img src="./img/iconIgual.png" alt="" class="icon">
+                    <div id="respostaConversao"></div>
+                </div>
+                <button class="btn" onclick="conversaoBase()">Converter</button>
+            </div>
+            
+        </div>
+        
+        
+        <div id="containerCalculadora">
+            <h2>Calculadora Aritmética</h2>
+            <div class="formularioConversao">
+
+                <div class="boxForm">
+                    <div>
+                        
+                        <div class="containerConversao">
+                            <input class="input" type="text" id="input_primeiro_numero">
+                            <select class="inputBase" id="select_base_primeiro_numero">
+                                <option value="2">2</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                                <option value="16">16</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <select class="select" id="select_operador">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">x</option>
+                            <option value="/">/</option>
+                        </select>
+                    </div>
+                    <div class="containerConversao">
+                        <input class="input" type="text" id="input_segundo_numero">
+                        <select  class="inputBase" id="select_base_segundo_numero">
+                            <option value="2">2</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="16">16</option>
+                        </select>
+                    </div>
+                    
+                    <img src="./img/iconIgual.png" alt="" class="icon">
+                    <div id="respostaCalculadora"></div>
+                </div>
+                <button class="btn" onclick="operacaoBase()">Calculo</button>
+            </div>
+        </div>
+        <div class="containerHistorico">
+            <div class="listaHistorico">
+                <h1>Histórico</h1>
+                <p id="respostaHistorico"></p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="corpoResposta" id="resposta"></div>
+    
+    
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0  ;
+}
+body {
+    background-color: #D9D9D9;
+    overflow: hidden;
+}
+.header{
+    background-color: #4B0980;
+    
+    border-bottom: 2px solid #ffffff;
+}
+
+.titulo {
+    color: #ffffff;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 120px;
+    height: 10vh
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+    color: #ffffff;
+
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sessaoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#containerBody {
+    display: flex;
+}
+
+#containerBody, .containerHistorico {
+    flex-direction: column;
+    width: 80vw; 
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #4B0980;
+}
+
+#containerCalculadora {
+    display: none;
+}
+
+#containerCalculadora {
+    flex-direction: column;
+    width: 80vw; 
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    color: #4B0980;
+
+}
+
+.formularioConversao {
+    margin-left: 25vh;
+}
+
+.containerHistorico {
+    display: flex;
+    width: 30vw;
+    height: 80vh; 
+    justify-content: center;
+    align-items: center;
+}
+.listaHistorico {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+    height: 80%;
+    width: 80%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #4B0980;
+    border-radius: 25px;
+    
+}
+
+#respostaHistorico {
+    margin-top: 100px;
+    overflow-y: scroll;
+}
+
+.containerConversao {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #4B0980;
+    border-radius: 15px;
+    height: 5vh;
+}
+
+.icon{
+    /* height: 1.4rem; */
+    width: 1.8rem;
+}
+
+.containerConversao input {
+    border: none;
+}
+
+.containerConversao .input {
+    border: none;
+    height: 100%;
+    width: 75%;
+    /* background-color: #4B0980; */
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+}
+.containerConversao .inputBase{
+    border: none;
+    width: 25%;
+    height: 100%;
+    border-left: 2px solid #4B0980;
+   background-color: #ffffff;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+ .select, #baseNumeroConvertido {
+    height: 5vh;
+    width: 5vw;
+    border: 2px solid #4B0980;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#respostaConversao {
+    width: 400px;
+    height: 5vh;
+    /* background-color: aqua; */
+}
+
+.btn {
+    background-color: #4B0980;
+    width: 100px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+.formularioConversao {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.boxForm{
+    display: flex; align-items: center; justify-content: space-evenly; gap: 1.4rem;
+}
+
+#respostaConversao {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#respostaHistorico span {
+    font-size: 8px;
+}
+
+@media (max-width:800px){
+    
+    .sessaoContainer {
+        flex-direction: column;
+        
+    }
+    
+    .titulo {
+        display: none;
+    }
+    .formularioConversao {
+        /* align-self: flex-start; */
+        margin-left: 0;
+        width: 1000px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boxForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        flex-direction: column;
+    }
+
+
+    .containerHistorico {
+        position: absolute;
+        bottom: 0;
+        height: 30vh; 
+        width: 100%;
+    }
+
+#respostaHistorico {
+    margin-top: 10px;
+}
+
+    #respostaConversao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .select, #baseNumeroConvertido {
+        width: 100%;
+    }
+    .header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 80px;
+        height: 10vh
+    }
+    
+
+    .navbar {
+        width: 100%;
+        gap: 25px;
+    }
+}
